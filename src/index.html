@@ -48,31 +48,32 @@
             position: absolute;
             right: 0;
         }
-        .emoji-container {
+        .emoji {
             position: absolute;
             top: 50%;
             left: 50%;
-            width: 250px;
-            height: 250px;
-            margin: -125px 0 0 -125px;
-            animation: rotate 10s linear infinite;
-        }
-        .emoji {
-            position: absolute;
             font-size: 2rem;
+            transform: translate(-50%, -50%);
+            animation: emit 2s linear infinite;
         }
-        .emoji:nth-child(1) { top: 0; left: 50%; transform: translate(-50%, -50%); }
-        .emoji:nth-child(2) { top: 14.64%; left: 85.36%; transform: translate(-50%, -50%); }
-        .emoji:nth-child(3) { top: 50%; left: 100%; transform: translate(-50%, -50%); }
-        .emoji:nth-child(4) { top: 85.36%; left: 85.36%; transform: translate(-50%, -50%); }
-        .emoji:nth-child(5) { top: 100%; left: 50%; transform: translate(-50%, -50%); }
-        .emoji:nth-child(6) { top: 85.36%; left: 14.64%; transform: translate(-50%, -50%); }
-        .emoji:nth-child(7) { top: 50%; left: 0; transform: translate(-50%, -50%); }
-        .emoji:nth-child(8) { top: 14.64%; left: 14.64%; transform: translate(-50%, -50%); }
+        .emoji:nth-child(1) { animation-delay: 0s; }
+        .emoji:nth-child(2) { animation-delay: 0.25s; }
+        .emoji:nth-child(3) { animation-delay: 0.5s; }
+        .emoji:nth-child(4) { animation-delay: 0.75s; }
+        .emoji:nth-child(5) { animation-delay: 1s; }
+        .emoji:nth-child(6) { animation-delay: 1.25s; }
+        .emoji:nth-child(7) { animation-delay: 1.5s; }
+        .emoji:nth-child(8) { animation-delay: 1.75s; }
 
-        @keyframes rotate {
-            0% { transform: rotate(0deg); }
-            100% { transform: rotate(360deg); }
+        @keyframes emit {
+            0% {
+                opacity: 1;
+                transform: translate(-50%, -50%) scale(0.5);
+            }
+            100% {
+                opacity: 0;
+                transform: translate(-50%, -50%) scale(2) translateY(-100px) rotate(360deg);
+            }
         }
     </style>
   </head>
