@@ -81,12 +81,10 @@
               <p class="about-wrapper__info-text">
                 In my journey as a developer, I've honed skills in data engineering, software development, game development, and more. 
                 Yet, what truly defines my approach is a simple yet powerful trait: my dedication to delivering results, regardless 
-                of the tools or languages involved. I firmly believe that success stems not just from technical prowess, but from a 
-                genuine commitment to seeing projects through to their best possible outcomes.
+                of the tools or languages involved.
               </p>
               <p class="about-wrapper__info-text">
                 In my free time, I enjoy visiting climbing gyms, working on animations, or just appreciating life. 
-                I try to maintain a good balance between work and leisure, and always bring a positive attitude to my projects.
               </p>
               <span class="d-flex mt-3">
                 <a
@@ -118,12 +116,54 @@
                 <h3 class="project-wrapper__text-title">Cricket Stats Pipeline GCP</h3>
                 <div>
                   <p class="mb-4">
-                    This project outlines the construction of a cricket statistics pipeline using Google Cloud services. It covers 
-                    data retrieval from the Cricbuzz API using Python, secure storage in Google Cloud Storage (GCS), Cloud Function 
-                    setup for triggering data processing, and Dataflow job execution for data transfer to BigQuery. The process 
-                    concludes with the creation of a Looker Studio dashboard for insightful data visualization. Each step contributes 
-                    to the seamless flow of data analysis and visualization, showcasing the journey from data retrieval to 
-                    visualization in the realm of data engineering.
+                    This project details building a cricket statistics pipeline with Google Cloud services. It starts with retrieving data from the 
+                    Cricbuzz API using Python and storing it in Google Cloud Storage (GCS). A Cloud Function triggers data processing, executing a 
+                    Dataflow job to transfer data from GCS to BigQuery. The final step involves creating a Looker Studio dashboard for data visualization. 
+                    This pipeline ensures seamless data flow from retrieval to insightful visualization, showcasing efficient data engineering practices.
+                  </p>
+                </div>
+                <a
+                  rel="noreferrer"
+                  target="_blank"
+                  class="cta-btn cta-btn--hero"
+                  href="#!"
+                >
+                  Source Code
+                </a>
+              </div>
+            </div>
+            <div class="col-lg-8 col-sm-12">
+              <div class="project-wrapper__image load-hidden">
+                <a rel="noreferrer" href="#!" target="_blank">
+                  <div
+                    data-tilt
+                    data-tilt-max="4"
+                    data-tilt-glare="true"
+                    data-tilt-max-glare="0.5"
+                    class="thumbnail rounded js-tilt"
+                  >
+                    <img
+                      alt="Project Image"
+                      class="img-fluid"
+                      src="assets/project.jpg"
+                    />
+                  </div>
+                </a>
+              </div>
+            </div>
+          </div>
+          <!-- /END Project -->
+
+          <!-- Notice: each .row is a project -->
+          <div class="row">
+            <div class="col-lg-4 col-sm-12">
+              <div class="project-wrapper__text load-hidden">
+                <h3 class="project-wrapper__text-title">Databricks: Kaggle to Snowflake</h3>
+                <div>
+                  <p class="mb-4">
+                    This project showcases the creation of an ETL pipeline using Databricks, Spark, and Snowflake. It involves downloading a dataset from 
+                    Kaggle via the Kaggle API, processing it in a Databricks notebook with Spark DataFrame operations, and loading the transformed data 
+                    into a Snowflake database for further analysis.
                   </p>
                 </div>
                 <a
@@ -170,12 +210,13 @@
           <div class="row">
             <div class="col-lg-4 col-sm-12">
               <div class="project-wrapper__text load-hidden">
-                <h3 class="project-wrapper__text-title">Project Title 1</h3>
+                <h3 class="project-wrapper__text-title">Azure: Tokyo Olympics</h3>
                 <div>
                   <p class="mb-4">
-                    Demonstrate in this description the skills of a programmer: such as having commitment, 
-                    having perseverance and accepting alternative solutions. Remember that being a portfolio you are not selling the project, 
-                    you are selling yourself, it reflects the resources used: Frameworks, libraries, platforms, etc.
+                    This project focuses on leveraging Azure services such as Azure Data Factory, Azure Databricks, and Azure Synapse Analytics to 
+                    process, transform, and analyze Tokyo Olympics data. The data is initially stored in CSV files and uploaded to Azure Storage on 
+                    Data Lake Gen2. Azure Data Factory orchestrates data movement, Azure Databricks handles data processing and transformation, and 
+                    Azure Synapse Analytics is utilized for querying and analyzing the transformed data stored in SQL tables.
                   </p>
                 </div>
                 <a
@@ -222,11 +263,13 @@
           <div class="row">
             <div class="col-lg-4 col-sm-12">
               <div class="project-wrapper__text load-hidden">
-                <h3 class="project-wrapper__text-title">Project Title 2</h3>
+                <h3 class="project-wrapper__text-title">Azure: Tokyo Olympics</h3>
                 <div>
                   <p class="mb-4">
-                    If the project was collaborative, reflect it in this description, that will demonstrate communication and/or leadership skills. 
-                    Additionally, if you made use of the mastery of a second language, it will reflect on you professionalism.
+                    This project aims to simulate a real-time streaming setup for stock market data using AWS services, Kafka, and Python. 
+                    The workflow involves deploying Kafka on an EC2 instance, generating stock market data in real-time using a Python notebook 
+                    as a Kafka producer, consuming this data with another Python notebook acting as a Kafka consumer, and storing the processed 
+                    data in an S3 bucket. Additionally, a crawler is used to automatically populate an Athena table for easy querying.
                   </p>
                 </div>
                 <a
