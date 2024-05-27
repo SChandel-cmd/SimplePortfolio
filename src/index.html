@@ -61,16 +61,16 @@
             font-size: 2rem;
             animation: emit 5s linear infinite;
         }
-        .emoji:nth-child(1) { top: 0; left: 50%; transform: translate(-50%, -50%); }
-        .emoji:nth-child(2) { top: 14.64%; left: 85.36%; transform: translate(-50%, -50%); }
-        .emoji:nth-child(3) { top: 50%; left: 100%; transform: translate(-50%, -50%); }
-        .emoji:nth-child(4) { top: 85.36%; left: 85.36%; transform: translate(-50%, -50%); }
-        .emoji:nth-child(5) { top: 100%; left: 50%; transform: translate(-50%, -50%); }
-        .emoji:nth-child(6) { top: 85.36%; left: 14.64%; transform: translate(-50%, -50%); }
-        .emoji:nth-child(7) { top: 50%; left: 0; transform: translate(-50%, -50%); }
-        .emoji:nth-child(8) { top: 14.64%; left: 14.64%; transform: translate(-50%, -50%); }
+        .emoji:nth-child(1) { top: 0; left: 50%; transform: translate(-50%, -50%); animation: emit-up 5s linear infinite; }
+        .emoji:nth-child(2) { top: 14.64%; left: 85.36%; transform: translate(-50%, -50%); animation: emit-up-right 5s linear infinite; }
+        .emoji:nth-child(3) { top: 50%; left: 100%; transform: translate(-50%, -50%); animation: emit-right 5s linear infinite; }
+        .emoji:nth-child(4) { top: 85.36%; left: 85.36%; transform: translate(-50%, -50%); animation: emit-down-right 5s linear infinite; }
+        .emoji:nth-child(5) { top: 100%; left: 50%; transform: translate(-50%, -50%); animation: emit-down 5s linear infinite; }
+        .emoji:nth-child(6) { top: 85.36%; left: 14.64%; transform: translate(-50%, -50%); animation: emit-down-left 5s linear infinite; }
+        .emoji:nth-child(7) { top: 50%; left: 0; transform: translate(-50%, -50%); animation: emit-left 5s linear infinite; }
+        .emoji:nth-child(8) { top: 14.64%; left: 14.64%; transform: translate(-50%, -50%); animation: emit-up-left 5s linear infinite; }
 
-        @keyframes emit {
+        @keyframes emit-up {
             0% {
                 opacity: 1;
                 transform: translate(-50%, -50%) scale(1);
@@ -80,14 +80,76 @@
                 transform: translate(-50%, -200%) scale(1.5);
             }
         }
-        .emoji:nth-child(2) { @keyframes emit { 0% { opacity: 1; transform: translate(-50%, -50%) scale(1); } 100% { opacity: 0; transform: translate(50%, -200%) scale(1.5); } } }
-        .emoji:nth-child(3) { @keyframes emit { 0% { opacity: 1; transform: translate(-50%, -50%) scale(1); } 100% { opacity: 0; transform: translate(200%, -50%) scale(1.5); } } }
-        .emoji:nth-child(4) { @keyframes emit { 0% { opacity: 1; transform: translate(-50%, -50%) scale(1); } 100% { opacity: 0; transform: translate(200%, 50%) scale(1.5); } } }
-        .emoji:nth-child(5) { @keyframes emit { 0% { opacity: 1; transform: translate(-50%, -50%) scale(1); } 100% { opacity: 0; transform: translate(-50%, 200%) scale(1.5); } } }
-        .emoji:nth-child(6) { @keyframes emit { 0% { opacity: 1; transform: translate(-50%, -50%) scale(1); } 100% { opacity: 0; transform: translate(-200%, 50%) scale(1.5); } } }
-        .emoji:nth-child(7) { @keyframes emit { 0% { opacity: 1; transform: translate(-50%, -50%) scale(1); } 100% { opacity: 0; transform: translate(-200%, -50%) scale(1.5); } } }
-        .emoji:nth-child(8) { @keyframes emit { 0% { opacity: 1; transform: translate(-50%, -50%) scale(1); } 100% { opacity: 0; transform: translate(-50%, -200%) scale(1.5); } } }
-    </style>
+        @keyframes emit-up-right {
+            0% {
+                opacity: 1;
+                transform: translate(-50%, -50%) scale(1);
+            }
+            100% {
+                opacity: 0;
+                transform: translate(50%, -150%) scale(1.5);
+            }
+        }
+        @keyframes emit-right {
+            0% {
+                opacity: 1;
+                transform: translate(-50%, -50%) scale(1);
+            }
+            100% {
+                opacity: 0;
+                transform: translate(150%, -50%) scale(1.5);
+            }
+        }
+        @keyframes emit-down-right {
+            0% {
+                opacity: 1;
+                transform: translate(-50%, -50%) scale(1);
+            }
+            100% {
+                opacity: 0;
+                transform: translate(150%, 50%) scale(1.5);
+            }
+        }
+        @keyframes emit-down {
+            0% {
+                opacity: 1;
+                transform: translate(-50%, -50%) scale(1);
+            }
+            100% {
+                opacity: 0;
+                transform: translate(-50%, 150%) scale(1.5);
+            }
+        }
+        @keyframes emit-down-left {
+            0% {
+                opacity: 1;
+                transform: translate(-50%, -50%) scale(1);
+            }
+            100% {
+                opacity: 0;
+                transform: translate(-150%, 50%) scale(1.5);
+            }
+        }
+        @keyframes emit-left {
+            0% {
+                opacity: 1;
+                transform: translate(-50%, -50%) scale(1);
+            }
+            100% {
+                opacity: 0;
+                transform: translate(-150%, -50%) scale(1.5);
+            }
+        }
+        @keyframes emit-up-left {
+            0% {
+                opacity: 1;
+                transform: translate(-50%, -50%) scale(1);
+            }
+            100% {
+                opacity: 0;
+                transform: translate(-150%, -150%) scale(1.5);
+            }
+        }    </style>
   </head>
 
   <!-- Todo: read the following HTML Todos to create your stunning portfolio website -->
