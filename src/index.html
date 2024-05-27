@@ -25,8 +25,8 @@
 
     <!-- Todo: remove the below script once you finish your portfolio -->
     <script async defer src="https://buttons.github.io/buttons.js"></script>
-<!--     <style>
-        body {
+    <style>
+/*         body {
             display: flex;
             flex-direction: column;
             justify-content: center;
@@ -34,13 +34,13 @@
             height: 100vh;
             background-color: #f0f0f0;
             margin: 0;
-        }
+        } */
         .containerxyz {
             position: relative;
             width: 200px;
             height: 200px;
         }
-        .container img {
+        .containerxyz img {
             width: 100%;
             height: 100%;
             border-radius: 50%;
@@ -49,18 +49,18 @@
         .emoji {
             position: absolute;
             font-size: 1.5rem;
-            animation: float 3s infinite linear;
+            animation: floatcustom 3s infinite linear;
         }
         .emoji:nth-child(1) { top: 0; left: 50%; transform: translate(-50%, -50%); }
         .emoji:nth-child(2) { top: 50%; right: 0; transform: translate(50%, -50%); }
         .emoji:nth-child(3) { bottom: 0; left: 50%; transform: translate(-50%, 50%); }
         .emoji:nth-child(4) { top: 50%; left: 0; transform: translate(-50%, -50%); }
 
-        @keyframes float {
+        @keyframes floatcustom {
             0%, 100% { transform: translateY(-10px); }
             50% { transform: translateY(10px); }
         }
-    </style> -->
+    </style>
   </head>
 
   <!-- Todo: read the following HTML Todos to create your stunning portfolio website -->
@@ -100,7 +100,7 @@
                 alt="Profile Image"
               />
             </div> -->
-            <div class="about-wrapper__image load-hidden">
+            <div class="containerxyz">
                 <img 
                   alt="Profile Image"
                   class="img-fluid rounded shadow-lg"
