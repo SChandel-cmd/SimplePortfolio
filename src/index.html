@@ -25,6 +25,41 @@
 
     <!-- Todo: remove the below script once you finish your portfolio -->
     <script async defer src="https://buttons.github.io/buttons.js"></script>
+    <style>
+        body {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            background-color: #f0f0f0;
+            margin: 0;
+        }
+        .container {
+            position: relative;
+            width: 200px;
+            height: 200px;
+        }
+        .container img {
+            width: 100%;
+            height: 100%;
+            border-radius: 50%;
+            border: 5px solid #000;
+        }
+        .emoji {
+            position: absolute;
+            font-size: 1.5rem;
+            animation: float 3s infinite linear;
+        }
+        .emoji:nth-child(1) { top: 0; left: 50%; transform: translate(-50%, -50%); }
+        .emoji:nth-child(2) { top: 50%; right: 0; transform: translate(50%, -50%); }
+        .emoji:nth-child(3) { bottom: 0; left: 50%; transform: translate(-50%, 50%); }
+        .emoji:nth-child(4) { top: 50%; left: 0; transform: translate(-50%, -50%); }
+
+        @keyframes float {
+            0%, 100% { transform: translateY(-10px); }
+            50% { transform: translateY(10px); }
+        }
+    </style>
   </head>
 
   <!-- Todo: read the following HTML Todos to create your stunning portfolio website -->
@@ -54,7 +89,7 @@
         <h2 class="section-title load-hidden">About me</h2>
         <div class="row about-wrapper">
           <div class="col-md-6 col-sm-12">
-            <div class="about-wrapper__image load-hidden">
+<!--             <div class="about-wrapper__image load-hidden">
               <img
                 alt="Profile Image"
                 class="img-fluid rounded shadow-lg"
@@ -63,6 +98,13 @@
                 src="assets/picbw.jpeg"
                 alt="Profile Image"
               />
+            </div> -->
+            <div class="container">
+                <img src="assets/picbw.jpeg" alt="Profile Image">
+                <div class="emoji" style="--i:1;">⚡</div>
+                <div class="emoji" style="--i:2;">⚡</div>
+                <div class="emoji" style="--i:3;">⚡</div>
+                <div class="emoji" style="--i:4;">⚡</div>
             </div>
           </div>
           <div class="col-md-6 col-sm-12">
