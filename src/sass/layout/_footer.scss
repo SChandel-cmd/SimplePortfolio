@@ -58,11 +58,12 @@
 }
 
 .back-to-top i {
-  color: #ffbd0b;
+  color: $primary-color;
   margin: 1rem 0 $default-font-size;
   transition: all 0.2s ease-in;
 
   &:hover {
+    color: $primary-color;
     transform: translateY(-2px);
   }
 }
