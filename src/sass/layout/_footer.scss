@@ -52,6 +52,7 @@
     transition: all 0.2s ease-in;
 
     &:hover {
+      color: $primary-color;
       transform: translateY(-2px);
     }
   }
@@ -63,7 +64,6 @@
   transition: all 0.2s ease-in;
 
   &:hover {
-    color: $primary-color;
     transform: translateY(-2px);
   }
 }
