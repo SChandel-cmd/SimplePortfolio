@@ -23,8 +23,6 @@
       src="https://unpkg.com/scrollreveal@4.0.0/dist/scrollreveal.min.js"
     ></script>
 
-    <!-- Todo: remove the below script once you finish your portfolio -->
-    <script async defer src="https://buttons.github.io/buttons.js"></script>
     <style>
         .custom-img-new {
           width: auto;
@@ -78,13 +76,34 @@
             0% { transform: rotate(0deg); }
             100% { transform: rotate(360deg); }
         }
+
+        .spark {
+          position: absolute;
+          width: 5px;
+          height: 5px;
+          background-color: white;
+          border-radius: 50%; /* Makes the spark circular */
+          pointer-events: none; /* Ensures the spark doesn't interfere with clicking */
+          animation: sparkAnimation 1s linear infinite; /* Apply animation */
+        }
+  
+        @keyframes sparkAnimation {
+            0% {
+                opacity: 1;
+                transform: scale(1);
+            }
+            100% {
+                opacity: 0;
+                transform: scale(2);
+            }
+        }
     </style>
   </head>
 
   <!-- Todo: read the following HTML Todos to create your stunning portfolio website -->
   <body>
     <div id="top"></div>
-
+    <div class="spark"></div>
     <!-- **** Hero Section **** -->
     <section id="hero" class="jumbotron">
       <div class="container">
